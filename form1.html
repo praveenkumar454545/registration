@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        #main {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 150px;
+            background: linear-gradient(rgba(0, 0, 255, 0.68), pink);
+            #m1 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: aliceblue;
+                height: 650px;
+                width: 650px;
+
+                #regi {
+                    color: black;
+                    width: 80%;
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+
+                #dual {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 30px;
+                    padding: 20px;
+                    width: 75%;
+                    
+
+                    #fullname {
+
+                        font-size: 25px;
+                        width: 100%;
+                    }
+
+                    #bar1 {
+
+                        width: 200px;
+                        height: 30px;
+
+                        input {
+                            width: 100%;
+                            height: 28px;
+                            font-weight: 500;
+                        }
+
+                    }
+                }
+
+                #dual1 {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: start;
+                    align-items: start;
+                    gap: 9px;
+                }
+
+                #dual2 {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: start;
+                    align-items: start;
+                    gap: 9px;
+                }
+
+
+                #gender {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 20px;
+                   
+                    width: 80%;
+                    height: 40px;
+
+                    label {
+                        font-size: 20px;
+                        font-weight: 500;
+                    }
+
+                    input {
+                        padding: 4px;
+                        width: 3%;
+                        cursor: pointer;
+                    }
+
+                    span {
+                        font-size: 19px;
+                        font-weight: 400;
+                    }
+
+                }
+
+                #reg {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 80%;
+                    padding-bottom: 100px;
+                    height: 40px;
+
+                    input {
+                        width: 100%;
+                        text-align: center;
+                        height: 45px;
+                        border: none;
+                        outline: none;
+                        color: white;
+                        background: linear-gradient(39deg,rgba(0, 0, 255, 0.68), pink);
+                        border-radius: 5px;
+                        font-size: 20px;
+                        font-weight:bold ;
+                        letter-spacing: 1px;
+
+                    }
+
+                    input:hover {
+                        cursor: pointer;
+                        background: linear-gradient(135deg,rgb(31, 96, 218), rgba(233, 113, 229, 0.68));
+
+                    }
+                }
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div id="m1">
+            <div id="regi"> REGISTRATION FORM</div>
+            <div id="dual">
+                <div id="dual1">
+                    <div id="fullname">enter your full name</div>
+                    <div id="bar1">
+                        <label for="name"></label>
+                        <input id="" type="text" placeholder="name">
+                    </div>
+                    <div id="fullname">email</div>
+                    <div id="bar1">
+                        <label for="name"></label>
+                        <input id="" type="text" placeholder="email">
+                    </div>
+                    <div id="fullname">password</div>
+                    <div id="bar1">
+                        <label for="name"></label>
+                        <input id="" type="text" placeholder="password">
+                    </div>
+                </div>
+                <div id="dual2">
+                    <div id="fullname">username</div>
+                    <div id="bar1">
+                        <label for="name"></label>
+                        <input id="" type="text" placeholder="username">
+                    </div>
+                    <div id="fullname">phone number</div>
+                    <div id="bar1">
+                        <label for="name"></label>
+                        <input id="" type="text" placeholder="phonenumber">
+                    </div>
+                    <div id="fullname">confirm password</div>
+                    <div id="bar1">
+                        <label for="name"></label>
+                        <input id="" type="text" placeholder="confirm paaword">
+                    </div>
+                </div>
+            </div>
+            <div id="gender">
+                <label for="g">Gender:-</label>
+                <input type="radio" name="g" id=""><span>Male</span>
+                <input type="radio" name="g" id=""><span>Female</span>
+                <input type="radio" name="g" id=""><span>others</span>
+            </div>
+            <div id="reg">
+                <input type="submit" value="register">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
